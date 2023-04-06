@@ -1,0 +1,62 @@
+﻿@model IMSDomainLayer.Entiry.RegisterUser
+
+@{
+    ViewData["Title"] = "RegisterIndex";
+}
+
+
+<hr />
+<div class="row">
+    <div class="mx-auto col-10 col-md-8 col-lg-6 ">
+        <h2 class="mx-auto col-10 col-md-8 col-lg-6 ">Register User</h2>
+        <form asp-action="RegisterIndex">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div>
+                @{
+                    if (TempData["msg"] != null)
+                    {
+                        string message = TempData["msg"] as string;
+                        
+                        var data = TempData["msg"];
+
+                        <h3><span class="text-danger">@TempData["msg"]</span></h3>
+                        if (message == "User Registerd Done")
+                        {
+                            <a href="/Login/Login" class="btn btn-primary mb-2">Click to Login</a>
+                        }
+
+                    }
+                }
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label">First Name *</label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email *</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">Password *</label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            
+            <div class="from-group mt-3 pt-3">
+                <button  type="submit" class=" btn btn-dark ">Save</button>
+                
+                <p>Already Have Account &ensp;<a href="/Login/Login" class="btn btn-primary">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

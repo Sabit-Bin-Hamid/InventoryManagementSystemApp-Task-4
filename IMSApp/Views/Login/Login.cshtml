@@ -1,0 +1,53 @@
+﻿@model IMSDomainLayer.Entiry.RegisterUser
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+<hr />
+<div class="row">
+    <div class="mx-auto col-10 col-md-8 col-lg-6 ">
+        <h2 class="mx-auto col-10 col-md-8 col-lg-6 ">Login User</h2>
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div>
+                @{
+                    if (TempData["msg"] != null)
+                    {
+                        //string message = TempData["msg"] as string;
+
+                        //var data = TempData["msg"];
+
+                        <h3><span class="text-danger">@TempData["msg"]</span></h3>
+                        //if (message == "User Registerd Done")
+                        //{
+                        //    <a href="/AppUser/Index" class="btn btn-primary mb-2">Click to Login</a>
+                        //}
+
+                    }
+                }
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email *</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">Password *</label>
+                <input type="password" asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="from-group mt-3 pt-3">
+                <button type="submit" class=" btn btn-dark ">Login</button>
+
+                <p>Create new account? &ensp;<a href="/Register/RegisterIndex" class="btn btn-primary">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

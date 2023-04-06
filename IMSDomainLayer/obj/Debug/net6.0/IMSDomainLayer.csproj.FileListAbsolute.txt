@@ -1,0 +1,12 @@
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\bin\Debug\net6.0\IMSDomainLayer.deps.json
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\bin\Debug\net6.0\IMSDomainLayer.dll
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\bin\Debug\net6.0\IMSDomainLayer.pdb
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\obj\Debug\net6.0\IMSDomainLayer.csproj.AssemblyReference.cache
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\obj\Debug\net6.0\IMSDomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\obj\Debug\net6.0\IMSDomainLayer.AssemblyInfoInputs.cache
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\obj\Debug\net6.0\IMSDomainLayer.AssemblyInfo.cs
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\obj\Debug\net6.0\IMSDomainLayer.csproj.CoreCompileInputs.cache
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\obj\Debug\net6.0\IMSDomainLayer.dll
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\obj\Debug\net6.0\refint\IMSDomainLayer.dll
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\obj\Debug\net6.0\IMSDomainLayer.pdb
+F:\Task4\InventoryManagementSystemApp\IMSDomainLayer\obj\Debug\net6.0\ref\IMSDomainLayer.dll

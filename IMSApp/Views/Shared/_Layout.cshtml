@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMS App</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        a {
+            font-family: Verdana,Geneva,Tahoma,sans-serif
+        }
+    </style>
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">MyNavbar</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                <a href="/AppUser/Create" class="nav-link">Create User</a>
+                </li>
+               
+            </ul>
+        </nav>
+        <div class="container">
+            @RenderBody()
+        </div>
+    </body>
+</html>

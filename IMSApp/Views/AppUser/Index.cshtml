@@ -1,0 +1,46 @@
+﻿@model IEnumerable<IMSDomainLayer.Entiry.AppUser>
+@{
+    ViewData["Title"] = "Index";
+   
+}
+
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-md-15 mt-3">
+            <h1> Add CURD </h1>
+            <div>
+                <a class="btn btn-info mt-2" href="/AppUser/Create"><h5>AddMore</h5></a>
+            </div>
+            <table class="table table-striped table-bordered table-dark mt-2">
+                <thead>
+                    <tr>
+                        <th><h3>User Name</h3></th>
+                        <th><h3>Email</h3></th>
+                        <th><h3>Phone</h3></th>
+                        <th><h3>Address</h3></th>
+
+                        <th><h3>Action</h3></th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td><h5>@item.UserName</h5></td>
+                            <td><h5>@item.Email</h5></td>
+                            <td><h5>@item.Phone</h5></td>
+                            <td><h5>@item.Address</h5></td>
+                            
+                            <td>
+                                <a class="btn btn-outline-light btn-success" href="/AppUser/Edit?id=@item.Id"><h5>Edit</h5></a> |
+                                <a class="btn btn-outline-light btn-danger" onclick="return window.confirm('Are you Sure?')"
+                                   href="/AppUser/Delete?id=@item.Id"><h5>Remove</h5></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
